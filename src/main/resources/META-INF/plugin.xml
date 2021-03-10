@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>tech.sicnu.AxinSast</id>
+    <name>SDK:AxinSast</name>
+    <vendor email="support@sicnu.tech" url="http://www.sicnu.tech">sicnu</vendor>
+
+    <description><![CDATA[
+    Sql injection found<br>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection language="JAVA"
+                         displayName="SDK:problem"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="tech.sicnu.SqliInspection"/>
+    </extensions>
+
+    <actions>
+
+    </actions>
+</idea-plugin>
