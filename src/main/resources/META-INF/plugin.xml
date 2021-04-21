@@ -20,6 +20,23 @@
                          enabledByDefault="true"
                          level="ERROR"
                          implementationClass="tech.sicnu.SqliInspection"/>
+        <localInspection language="JAVA"
+                         displayName="SDK:probelm"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="tech.sicnu.XXEInspection"/>
+        <localInspection language="JAVA"
+                         displayName="SDK:probelm"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="tech.sicnu.XpathInjection"/>
+
     </extensions>
 
     <actions>

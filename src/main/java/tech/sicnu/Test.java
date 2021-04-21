@@ -2,6 +2,8 @@ package tech.sicnu;
 
 
 import org.apache.commons.lang.StringUtils;
+import org.jdom.input.SAXBuilder;
+
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -51,6 +53,8 @@ public class Test {
         System.out.println(c.remove(0));
         System.out.println(MessageFormat.format("hello {0}", "world"));
         System.out.println(String.format("hello %s", "world"));
+
+        SAXBuilder saxBuilder = new SAXBuilder();
     }
     interface TestMethod{
         public void print(String str);
